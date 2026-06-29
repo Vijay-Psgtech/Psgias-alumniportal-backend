@@ -54,6 +54,9 @@ app.use("/api/albums", require("./routes/albums"));
 // ── NEW: NEWSLETTERS API (Create, Read, Update, Delete) ───────────────
 app.use("/api/newsletters", require("./routes/newsletters"));
 
+// Campaign management (Admin only) ───────────────
+app.use("/api/campaigns", require("./routes/campaigns"));
+
 
 
 // ── Error handler ────────────────────────────────────────────────
