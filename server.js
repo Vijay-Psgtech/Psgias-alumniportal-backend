@@ -57,6 +57,9 @@ app.use("/api/newsletters", require("./routes/newsletters"));
 // Campaign management (Admin only) ───────────────
 app.use("/api/campaigns", require("./routes/campaigns"));
 
+// Notification scrolls (separate from /api/notifications)
+app.use("/api/notification-scrolls", require("./routes/scrollRoutes"));
+
 
 
 // ── Error handler ────────────────────────────────────────────────
