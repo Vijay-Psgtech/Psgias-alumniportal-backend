@@ -60,6 +60,10 @@ app.use("/api/campaigns", require("./routes/campaigns"));
 // Notification scrolls (separate from /api/notifications)
 app.use("/api/notification-scrolls", require("./routes/scrollRoutes"));
 
+// User management (Admin only)
+app.use("/api/users", require("./routes/users"));
+
+
 
 
 // ── Error handler ────────────────────────────────────────────────
