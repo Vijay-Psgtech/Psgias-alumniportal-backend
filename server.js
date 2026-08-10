@@ -48,6 +48,9 @@ app.use("/api/departments", require("./routes/departments"));
 // Chapters must be mounted before /api/alumni, otherwise /api/alumni/:id catches /api/alumni/chapters
 app.use("/api/alumni/chapters", require("./routes/chapters"));
 
+// Admin simple routes (approve/reject/stats) — uses Alumni model + isAdmin flag
+app.use("/api/admin", require("./routes/admin"));
+
 // ── NEW: EVENTS API (Create, Read, Update, Delete) ───────────────
 app.use("/api/events", require("./routes/events"));
 
