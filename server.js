@@ -66,6 +66,9 @@ app.use("/api/campaigns", require("./routes/campaigns"));
 // Notification scrolls (separate from /api/notifications)
 app.use("/api/notification-scrolls", require("./routes/scrollRoutes"));
 
+// Reports routes for admin
+app.use("/api/reports", require("./routes/adminReports"));
+
 // User management (Admin only)
 app.use("/api/users", require("./routes/users"));
 
