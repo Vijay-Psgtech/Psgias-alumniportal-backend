@@ -53,6 +53,9 @@ app.use("/api/alumni/chapters", require("./routes/chapters"));
 // Admin simple routes (approve/reject/stats) — uses Alumni model + isAdmin flag
 app.use("/api/admin", require("./routes/admin"));
 
+// Admin Dashboard (full alumni mgmt + stats)
+app.use("/api/admin/dashboard", require("./routes/adminDash"));
+
 // ── NEW: EVENTS API (Create, Read, Update, Delete) ───────────────
 app.use("/api/events", require("./routes/events"));
 
