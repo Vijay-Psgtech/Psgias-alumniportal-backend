@@ -77,6 +77,6 @@ exports.rejectAlumni = async (req, res) => {
 
     res.json({ message: "Alumni registration rejected and deleted" });
   } catch (error) {
-    res.status(500).json({ message: "Server error", error: error.messgae });
+    res.status(500).json({ message: "Server error", error: error.message });
   }
 };
